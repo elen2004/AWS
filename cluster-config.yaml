@@ -1,0 +1,13 @@
+[aws]
+aws_region_name = us-east-1
+
+[cluster default]
+key_name = hpc-key
+base_os = alinux2
+scheduler = slurm
+compute_instance_type = c5.xlarge
+enable_efa = compute
+fsx_settings = lustre
+
+[fsx lustre]
+shared_dir = /fsx
